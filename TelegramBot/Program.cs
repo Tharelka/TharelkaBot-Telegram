@@ -30,7 +30,7 @@ namespace TelegramBot
                 switch (msg.Text)
                 {
                     case "/start":
-                        await client.SendTextMessageAsync(chatId: msg.Chat.Id, "отправь команду /info");
+                        await client.SendTextMessageAsync(chatId: msg.Chat.Id, "/info");
                         break;
                     case "/info":
                         await client.SendTextMessageAsync(chatId: msg.Chat.Id, "Sticker:\n-TharelkaPig\n-TharelkaG\nGitHub: https://github.com/Tharelka/TharelkaBot-Telegram");
